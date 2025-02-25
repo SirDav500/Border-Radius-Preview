@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+html, body {
+    height: 100%; /* Faz o body ocupar 100% da altura da tela */
+    margin: 0; /* Remove qualquer margem que pode afetar o layout */
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-grow: 1; /* Permite que o conteúdo principal ocupe o espaço necessário */
+}
+
+/* .footer {
+    margin-top: auto;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+} */
+
+.footer {
+    display: flex;
+    flex-direction: column; /* Mantém o "Contato" acima e os links abaixo */
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+body{
+    font-family: 'Josefin Sans', serif;
+    text-align: center;
+    margin: 50px;
+    background-color: rgb(168, 80, 16);
+}
+
+.preview{
+    width: 200px;
+    height: 200px;
+    background-color: #d8993a;
+    margin: 20px auto;
+    transition: all 0.3s ease;
+}
+
+.controls{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+input{
+    width: 120px;
+}
+
+input[type="range"] {
+    -webkit-appearance: none; /* Remove o estilo padrão do navegador */
+    appearance: none;
+    width: 200px;
+    height: 6px;
+    background: #ccc;
+    border-radius: 3px;
+    outline: none;
+    opacity: 0.8;
+    transition: opacity .15s ease-in-out;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: blue;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: blue;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.code{
+    background: #f4f4f4;
+    padding: 10px;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.botão{
+    margin: 10px;
+    padding: 2px;
+    font-family: 'Josefin Sans', serif;
+}
+
+.link{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+    margin: px auto;
+}
+
