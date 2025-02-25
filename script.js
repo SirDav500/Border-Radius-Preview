@@ -12,15 +12,6 @@ function updateBorderRadius(){
     code.textContent = `border-radius: ${borderRadius}`;
 }
 
-// function copyCode() {
-//     updateBorderRadius(); // Garante que o código está atualizado antes de copiar
-//     navigator.clipboard.writeText(code.textContent).then(() => {
-//         alert("Código copiado!");
-//     }).catch(err => {
-//         console.error("Erro ao copiar código:", err);
-//     });
-// }
-
 async function copyCode() {
     try{
         await navigator.clipboard.writeText(code.textContent);
@@ -33,7 +24,3 @@ async function copyCode() {
 document.querySelectorAll("input").forEach(input => {
     input.addEventListener("input", updateBorderRadius);
 });
-
-
-//border-radius: 34px 8px 35px 12px border-radius: 32px 56px 39px 70px border-radius: 32px 56px 39px 70px border-radius: 100px 23px 0px 19px
-//border-radius: 0px 0px 35px 16px border-radius: 50px 0px 59px 100px border-radius: 50px 0px 59px 100px  Border-radius: 0px 0px 0px 0px border-radius: 0px 26px 42px 0px border-radius: 0px 26px 42px 0px

@@ -2,8 +2,7 @@
 
 
 html, body {
-    height: 100%; /* Faz o body ocupar 100% da altura da tela */
-    margin: 0; /* Remove qualquer margem que pode afetar o layout */
+    height: 100%; 
     display: flex;
     flex-direction: column;
 }
@@ -12,19 +11,13 @@ body {
     justify-content: center;
     align-items: center;
     text-align: center;
-    flex-grow: 1; /* Permite que o conteúdo principal ocupe o espaço necessário */
+    flex-grow: 1;
 }
 
-/* .footer {
-    margin-top: auto;
-    padding: 20px;
-    text-align: center;
-    width: 100%;
-} */
 
 .footer {
     display: flex;
-    flex-direction: column; /* Mantém o "Contato" acima e os links abaixo */
+    flex-direction: column; 
     align-items: center;
     padding: 20px;
     text-align: center;
@@ -58,7 +51,7 @@ input{
 }
 
 input[type="range"] {
-    -webkit-appearance: none; /* Remove o estilo padrão do navegador */
+    -webkit-appearance: none; 
     appearance: none;
     width: 200px;
     height: 6px;
